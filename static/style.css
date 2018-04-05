@@ -1,16 +1,14 @@
 body{
-	font-family:arial;
+	font-family:Century;
 }
 img.tiny{
-    width: 20px;
+    width: 10px;
     border: solid thin grey;	
 }
 img.big {
-    width: 200px;
+    width: 500px;
     border: solid thin grey;
-    position: absolute;
-    right: 1ex;
-    top: 1ex;
+    position: left;
 }
 img{width:50px;border: solid thin grey; }
 
@@ -28,7 +26,26 @@ a{
 }
 .nav_button{
 border:solid thin black;
-padding:lex;
+padding:1ex;
 width:15ex;
 display:inline-block;
 }
+.delete{
+    border: solid thin black;
+    padding: 1ex;
+    margin: 1ex;
+    border-radius: 0.5ex;
+    width: 10ex;
+    text-align: center;
+    display: inline-block;
+}
+.edit{
+    border: solid thin black;
+    padding: 1ex;
+    margin: 1ex;
+    border-radius: 0.5ex;
+    width: 10ex;
+    text-align: center;
+    display: inline-block;
+}
+

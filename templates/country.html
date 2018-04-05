@@ -15,6 +15,14 @@
 				<div><a href='../continent/{{c.continent}}'>{{c['continent']}}</a></div>
 			</div>
 			<div>
+				<div>TLD</div>
+				<div>{{c['tld']}}</div>
+			</div>
+			<div>
+			<div>Area</div>
+			<div>{{"{:,.0f}".format(c['area'])}}</div>
+			</div>
+			<div>
 				<div>Population</div>
 				<div>{{"{:,.0f}".format(c['population'])}}</div>
 			</div>
@@ -25,10 +33,10 @@
 		</div>
 		<img src="/static/flags/{{c['tld']}}.gif" class='big'>
 		<div class='edit-button'>
-				<a href='/editCountryByName/{{c.name}}'>Edit</a>
+				<a href='/editCountryByName/{{c.name}}' class="edit">Edit</a>
 		</div>
-		<div class='delete.button'>
-		<a href='/delete/{{c.name}}'>Delete</a>
+		<div class='delete-button'>
+		<a href='/delete/{{c.name}}' class="delete">Delete</a>
 		</div>
 	</body>
 </html>

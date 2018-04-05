@@ -67,7 +67,7 @@ def updateCountryByNamePage():
 		c['capital'] = request.args.get('capital')
 		c['continent'] = request.args.get('continent')
 		return render_template(
-					'countryedit.html',
+					'country.html',
 					c = c)
 
 @app.route('/delete/<n>')
@@ -78,14 +78,13 @@ def deleteCountry(n):
                         break
                 i = i+1
         del w[i]
-        return render_template(
-                'index.html',
+        return render_template('index.html',
                 w = w[0:page_size],
                 page_number = 0,
                 page_size = page_size
                 )
 
-app.run(host='0.0.0.0', port=5630, debug=True)
+app.run(host='0.0.0.0', port=5033, debug=True)
 
 
 
