@@ -24,6 +24,7 @@ img{width:50px;border: solid thin grey; }
 a{
 	text-decoration: none;
 }
+
 .nav_button{
 border:solid thin black;
 padding:1ex;
@@ -40,6 +41,15 @@ display:inline-block;
     display: inline-block;
 }
 .edit{
+    border: solid thin black;
+    padding: 1ex;
+    margin: 1ex;
+    border-radius: 0.5ex;
+    width: 10ex;
+    text-align: center;
+    display: inline-block;
+}
+.createbutton{
     border: solid thin black;
     padding: 1ex;
     margin: 1ex;

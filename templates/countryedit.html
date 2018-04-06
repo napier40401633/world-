@@ -28,7 +28,11 @@
 			</div>
 			<div>
 				<div>GDP (million $)</div>
-				<div>{{ "{:,.0f}".format(c['gdp']/1000000) }}</div>
+				<div><input name="gdp" value="{{"{:,.2f}".format(c['gdp']/100000)}}"></div>
+			</div>
+			<div>
+				<div>Tld</div>
+				<div><input name='tld' value={{c['tld']}}></div>
 			</div>
 		</div>
 		<img src="/static/flags/{{c['tld']}}.gif" class='big'>
