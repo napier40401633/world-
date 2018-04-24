@@ -58,4 +58,13 @@ display:inline-block;
     text-align: center;
     display: inline-block;
 }
-
+.sort a{
+    background-color: black;
+    color : white;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+.sort a:hover{
+    background-color: black;
+    color: yellow;
+}

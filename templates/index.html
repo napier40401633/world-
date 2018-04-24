@@ -5,11 +5,11 @@
 </head>
 	<body>
 		<h1>World Factbook</h1>
-		<div>
+		<div class="sort">
 			{% for s in lota %}
 			<a href="/searchWithAlphabetic/{{s}}">{{s}}</a>
 			{% endfor %}
-		</div>
+		</div><br>
 		<div>There are {{w|length}} countries in in this page.</div>
 		<ul>
 			{% for c in w %}
