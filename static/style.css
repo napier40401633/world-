@@ -1,9 +1,12 @@
 body{
 	font-family:Century;
+    background-color: #FFF8DC;
+    font-size: 20px;
 }
 img.tiny{
-    width: 10px;
-    border: solid thin grey;	
+    width: 30px;
+    border: solid thin grey;
+
 }
 img.big {
     width: 500px;
@@ -30,6 +33,13 @@ border:solid thin black;
 padding:1ex;
 width:15ex;
 display:inline-block;
+background-color: #008080;
+}
+.nav_button a{
+    color: white;
+}
+.nav_button a:hover{
+    color: yellow;
 }
 .delete{
     border: solid thin black;
@@ -39,6 +49,7 @@ display:inline-block;
     width: 10ex;
     text-align: center;
     display: inline-block;
+    background-color:white;
 }
 .edit{
     border: solid thin black;
@@ -48,6 +59,7 @@ display:inline-block;
     width: 10ex;
     text-align: center;
     display: inline-block;
+    background-color: white;
 }
 .createbutton{
     border: solid thin black;
@@ -57,9 +69,16 @@ display:inline-block;
     width: 10ex;
     text-align: center;
     display: inline-block;
+    background-color:#008080;
+}
+.createbutton a{
+    color: white;
+}
+.createbutton a:hover{
+    color: yellow;
 }
 .sort a{
-    background-color: black;
+    background-color: #008080;
     color : white;
     padding: 10px 10px;
     text-decoration: none;
