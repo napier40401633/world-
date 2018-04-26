@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import json
 
-page_number =10
+page_number =0
 w = json.load(open("worldl.json"))
 lota = sorted(list(set([c['name'][0] for c in w])))
 print(lota)
@@ -10,7 +10,7 @@ w = json.load(open("worldl.json"))
 for c in w:
 	c['tld'] = c['tld'][1:]
 page_size = 20
-page_number =10
+page_number =0
 app = Flask(__name__)
 
 @app.route('/')
@@ -109,7 +109,7 @@ def createCountryByName():
 
 @app.route('/addCountryByName')
 def addCountryByName():
-		n = request.args.get('name')
+		# name = request.args.get('name')
 		c = {}
 		c['name'] = request.args.get('name')
 		c['capital'] = request.args.get('capital')

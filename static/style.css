@@ -2,6 +2,10 @@ body{
 	font-family:Century;
     background-color: #FFF8DC;
     font-size: 20px;
+    color: black;
+}
+body a{
+    color: black;
 }
 img.tiny{
     width: 30px;
@@ -11,7 +15,7 @@ img.tiny{
 img.big {
     width: 500px;
     border: solid thin grey;
-    position: left;
+    text-align: center;
 }
 img{width:50px;border: solid thin grey; }
 
@@ -50,6 +54,7 @@ background-color: #008080;
     text-align: center;
     display: inline-block;
     background-color:white;
+    color: black;
 }
 .edit{
     border: solid thin black;
@@ -60,6 +65,7 @@ background-color: #008080;
     text-align: center;
     display: inline-block;
     background-color: white;
+    color: black;
 }
 .createbutton{
     border: solid thin black;
